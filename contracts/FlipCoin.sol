@@ -9,6 +9,7 @@ contract FlipCoin is Ownable, usingProvable{
     
     using SafeMath for uint;
     
+    address public contractOwner;
     uint public minimumBet;
     uint public contractBalance;
     bytes32 public queryId;
@@ -27,6 +28,7 @@ contract FlipCoin is Ownable, usingProvable{
     mapping (address => uint) public playersBalance;
 
     constructor () public {
+        contractOwner = msg.sender;
         minimumBet = 1000000000000000;
         provable_setProof(proofType_Ledger);
     }

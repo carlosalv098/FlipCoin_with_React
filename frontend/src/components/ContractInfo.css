@@ -1,0 +1,12 @@
+.contractInfo {
+}
+
+.contractInfo {
+    display: flex;
+    align-items: baseline;
+    padding: 5px;
+}
+
+.contractInfo > h2 {
+    padding-right: 5px;
+}

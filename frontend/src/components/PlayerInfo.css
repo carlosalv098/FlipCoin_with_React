@@ -1,0 +1,23 @@
+
+
+.playerInfo__player {
+    padding: 5px;
+}
+
+.playerInfo__player > h2 {
+    padding-bottom: 3px;
+}
+
+.playerInfo__earnings {
+    display: flex;
+    align-items: baseline;
+    padding: 5px;
+}
+
+.playerInfo__earnings > h2 {
+    padding-right: 5px;
+}
+
+.playerInfo > Button {
+    margin: 5px;
+}

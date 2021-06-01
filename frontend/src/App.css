@@ -1,32 +1,63 @@
-.App {
+* {
+  margin: 0;
+}
+
+.app {
+  orientation: row;
+  background-color: #DCDCDC;
+  height: 650px;
+}
+
+.app__title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__players {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__playerLeft {
+  width: 50%;
+  padding: 5px;
+  background-color: #CFD6E3;
 }
+
+.app__playerLeft__choice {
+  margin-top: 15px;
+}
+
+.app__playerLeft__choice > h4 {
+  margin-bottom: 5px;
+}
+
+.app__playerLeft__choice > h3 {
+  margin-top: 5px;
+}
+
+.app__playerRight {
+  width: 50%;
+}
+
+.app__owner {
+  height: 100px;
+  margin-left: 5px;
+  display: flex;
+}
+
+.app__owner__withdraw {
+  width: 50%;
+}
+
+.app__owner__deposit {
+  padding-top: 30px;
+  width: 50%;
+}
+
+.app__owner > h4 {
+  margin-bottom: 5px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
