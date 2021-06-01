@@ -86,7 +86,6 @@ function App() {
     }
     else {
       await flipCoin.createBet(choice, {value: betAmount})
-      console.log(choice, player, input)
       checkIfFails();
       checkBetPlaced();
       checkResult();
